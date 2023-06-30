@@ -1,4 +1,4 @@
-# Sunburst Graphic for Metagenomic Analysis
+# Interactive Sunburst Graphic for Metagenomic Analysis
 
 This repository contains code for generating a sunburst graphic for metagenomic analysis. The code reads a CSV file using the read.csv() function, allowing users to select the file interactively. The CSV file should be formatted with semicolon (;) as the delimiter and without header information.
 
