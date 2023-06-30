@@ -7,3 +7,6 @@ Once the data is loaded, the code utilizes the sunburst() function to create an 
 This repository provides a convenient and customizable tool for visualizing metagenomic data using a sunburst graphic, enabling researchers to gain insights into the hierarchical structure and composition of microbial communities.
 
 Note: It is recommended to ensure that the required packages and dependencies are installed before running the code.
+
+##View as HTML:
+https://alejandro2195.github.io/Interactive-Sunburst-Graphic-for-Metagenomic-Analysis/
