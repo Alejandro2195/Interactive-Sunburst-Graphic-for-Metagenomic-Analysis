@@ -1,0 +1,49 @@
+---
+title: "Interactive Sunburst Graphic for Metagenomic Analysis"
+author: "Alejandro José Gómez García"
+email: alejandrorex95@gmail.com
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    code_download: TRUE
+    theme: united
+  csl: apa.csl
+---
+
+## Necessary Package
+
+The "sunburst" package provides functions to create interactive visualizations of sunburst diagrams. Sunburst diagrams are useful for displaying the hierarchical structure of data and how categories overlap.
+```{r, warning=FALSE}
+library(sunburstR)
+```
+
+To make an interactive phylogenetic tree plot with the SunburstR package
+The data must be in csv and each taxonomic class to be classified must be separated by a hyphen (in the same column) and in another column the count
+
+## Example of data type
+
+```{r}
+sun_all<-read.csv(choose.files(), header = FALSE, sep = ";",stringsAsFactors = FALSE)
+head(sun_all)
+```
+
+### Sunburst Graphic
+
+First, we will plot all identified individuals, regardless of the level to which they have been identified.
+```{r, warning=FALSE}
+sunburst(sun_all,count = TRUE, sumNodes = FALSE)
+```
+
+```{r}
+sun_species<-read.csv(choose.files(), header = FALSE, sep = ";",stringsAsFactors = FALSE)
+```
+
+### Sunburst Graphic with only species
+
+In this case we will only graph the individuals that have been identified up to the species level to compare with the previous graph.
+```{r, warning=FALSE}
+sunburst(sun_species,count = TRUE)
+```
+
+
