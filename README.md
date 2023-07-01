@@ -8,5 +8,5 @@ This repository provides a convenient and customizable tool for visualizing meta
 
 Note: It is recommended to ensure that the required packages and dependencies are installed before running the code.
 
-##View as HTML:
-https://alejandro2195.github.io/Interactive-Sunburst-Graphic-for-Metagenomic-Analysis/
+## View as HTML:
+
